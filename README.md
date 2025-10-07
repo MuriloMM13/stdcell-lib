@@ -707,3 +707,4 @@ end process;
 - The generated **.lib** and **.lef** files maintain consistent **pin names** for synthesis and layout integration.
 
 📄 Full report available at: [`Docs/RELATORIO_CCI-1.pdf`](./Docs/RELATORIO_CCI-1.pdf)
+
