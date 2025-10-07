@@ -31,157 +31,254 @@ stdcell-lib/
 
 ## 🔹 NOT Gate
 
-<div align="center">
-  <img src="./Figures/NOT.png" width="380">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:12px; text-align:center; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <img src="./Figures/NOT.png" width="340">
 </div>
-
-**Truth Table**
-
+</td>
+<td style="width:50%; vertical-align:top;">
+  
+**Truth Table**  
+  
 | A | Q |
 |:-:|:-:|
 | 0 | 1 |
 | 1 | 0 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= not A;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/LAYOUT_NOT.png" width="440">
+  <img src="./Figures/LAYOUT_NOT.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**  
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 0.8208 | 0.8208 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 NAND Gate
 
-<div align="center">
-  <img src="./Figures/NAND.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/NAND.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
-| A | B | C | Q |
-|:-:|:-:|:-:|:-:|
-| 0 | 0 | 0 | 1 |
-| 0 | 0 | 1 | 1 |
-| 0 | 1 | 1 | 1 |
-| 1 | 1 | 1 | 0 |
+| A | B | Q |
+|:-:|:-:|:-:|
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
-Q <= not (A and B and C);
+Q <= not (A and B);
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_nand.png" width="440">
+  <img src="./Figures/layout_nand.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.1457 | 1.1457 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 NOR Gate
 
-<div align="center">
-  <img src="./Figures/NOR.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/NOR.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
-| A | B | C | Q |
-|:-:|:-:|:-:|:-:|
-| 0 | 0 | 0 | 1 |
-| 0 | 1 | 0 | 0 |
-| 1 | 1 | 0 | 0 |
-| 1 | 1 | 1 | 0 |
+| A | B | Q |
+|:-:|:-:|:-:|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 0 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
-Q <= not (A or B or C);
+Q <= not (A or B);
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_nor.png" width="440">
+  <img src="./Figures/layout_nor.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.1457 | 1.1457 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 AND Gate
 
-<div align="center">
-  <img src="./Figures/AND.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/AND.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
-| A | B | C | Q |
-|:-:|:-:|:-:|:-:|
-| 0 | 0 | 0 | 0 |
-| 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 1 |
+| A | B | Q |
+|:-:|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
-Q <= A and B and C;
+Q <= A and B;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_AND.png" width="440">
+  <img src="./Figures/layout_AND.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.9665 | 1.4962 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 OR Gate
 
-<div align="center">
-  <img src="./Figures/OR.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/OR.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
-| A | B | C | Q |
-|:-:|:-:|:-:|:-:|
-| 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 1 |
+| A | B | Q |
+|:-:|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
-Q <= A or B or C;
+Q <= A or B;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_or.png" width="440">
+  <img src="./Figures/layout_or.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.9665 | 1.4962 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 XOR Gate
 
-<div align="center">
-  <img src="./Figures/XOR.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/XOR.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | A | B | Q |
 |:-:|:-:|:-:|
@@ -189,29 +286,47 @@ Q <= A or B or C;
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= A xor B;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_xor.png" width="440">
+  <img src="./Figures/layout_xor.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 4.8222 | 1.8468 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 XNOR Gate
 
-<div align="center">
-  <img src="./Figures/xnor.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/xnor.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | A | B | Q |
 |:-:|:-:|:-:|
@@ -219,211 +334,340 @@ Q <= A xor B;
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= not (A xor B);
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_xor.png" width="440">
+  <img src="./Figures/layout_xor.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 5.6430 | 2.5393 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Buffer
 
-<div align="center">
-  <img src="./Figures/Buffer.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/Buffer.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | A | Q |
 |:-:|:-:|
 | 0 | 0 |
 | 1 | 1 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= A;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_buffer.png" width="440">
+  <img src="./Figures/layout_buffer.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.6416 | 1.1970 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Tri-State Inverter
 
-<div align="center">
-  <img src="./Figures/INV-TRI-STATE.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/INV-TRI-STATE.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | A | EN | Q |
 |:-:|:-:|:-:|
 | 0 | 1 | 1 |
 | 1 | 1 | 0 |
 | X | 0 | Z |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= not A when EN = '1' else 'Z';
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_tri-state.png" width="440">
+  <img src="./Figures/layout_tri-state.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.4022 | 1.4022 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Buffer Tri-State
 
-<div align="center">
-  <img src="./Figures/buf-tri-state.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/buf-tri-state.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | A | EN | Q |
 |:-:|:-:|:-:|
 | 0 | 1 | 0 |
 | 1 | 1 | 1 |
 | X | 0 | Z |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= A when EN = '1' else 'Z';
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/LAYOUT_BUFFER_TRI-STATE.png" width="440">
+  <img src="./Figures/LAYOUT_BUFFER_TRI-STATE.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 2.2230 | 2.5479 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Transmission Gate (TG)
 
-<div align="center">
-  <img src="./Figures/transmission.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/transmission.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | A | EN | Q |
 |:-:|:-:|:-:|
 | 0 | 1 | 0 |
 | 1 | 1 | 1 |
 | X | 0 | Z |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= A when EN = '1' else 'Z';
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_tg.png" width="440">
+  <img src="./Figures/layout_tg.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 1.5903 | 1.5903 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Multiplexer 2:1 (MUX)
 
-<div align="center">
-  <img src="./Figures/MUX.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/MUX.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | S | A | B | Q |
 |:-:|:-:|:-:|:-:|
-| 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 1 |
+| 0 | A | B | A |
+| 1 | A | B | B |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
 Q <= (A and not S) or (B and S);
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_mux.png" width="440">
+  <img src="./Figures/layout_mux.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 4.0014 | 1.8382 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Latch D
 
-<div align="center">
-  <img src="./Figures/LATCH.png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/LATCH.png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
-| CLK | D | Q |
+| EN | D | Q(next) |
 |:-:|:-:|:-:|
 | 0 | X | Qprev |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
-process (CLK, D)
+process (EN, D)
 begin
-    if (CLK = '1') then
+    if (EN = '1') then
         Q <= D;
     end if;
 end process;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_latch.png" width="440">
+  <img src="./Figures/layout_latch.png" width="420">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 6.4638 | 2.8899 |
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔹 Flip-Flop D
 
-<div align="center">
-  <img src="./Figures/ff .png" width="360">
+<table>
+<tr>
+<td style="width:50%; vertical-align:top;">
+<div style="background-color:#ffffff; padding:8px; text-align:center;">
+  <img src="./Figures/ff .png" width="320">
 </div>
+</td>
+<td style="width:50%; vertical-align:top;">
 
-**Truth Table**
+**Truth Table**  
 
 | CLK | D | Q(next) |
 |:-:|:-:|:-:|
-| ↑ | 0 | 0 |
-| ↑ | 1 | 1 |
+| ↑  | 0 | 0 |
+| ↑  | 1 | 1 |
+</td>
+</tr>
+</table>
 
 **Functional Code (VHDL)**  
 ```vhdl
@@ -435,13 +679,23 @@ begin
 end process;
 ```
 
+<table>
+<tr>
+<td style="width:55%; vertical-align:top;">
 <div align="center">
-  <img src="./Figures/layout_ff.png" width="440">
+  <img src="./Figures/layout_ff.png" width="400">
 </div>
+</td>
+<td style="width:45%; vertical-align:top; padding-left:12px;">
+
+**Area (µm²)**
 
 | Standard Cells | Full Custom |
 |---:|---:|
 | 12.1068 | 4.6426 |
+</td>
+</tr>
+</table>
 
 ---
 
