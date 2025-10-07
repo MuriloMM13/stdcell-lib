@@ -705,7 +705,5 @@ end process;
 - All cells were **sized based on the NOT gate** with \( W_p/W_n = 1.45833 \).  
 - For series-connected devices, \( W \) was multiplied by the number of stacked transistors.  
 - Area comparisons are based on the values reported in the project’s technical report.  
-- The generated **.lib** and **.lef** files maintain consistent **pin names** for synthesis and layout integration.
 
-📄 Full report available at: [`Docs/RELATORIO_CCI-1.pdf`](./Docs/RELATORIO_CCI-1.pdf)
 
