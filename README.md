@@ -32,7 +32,7 @@ stdcell-lib/
 ## 🔹 NOT Gate
 
 <div align="center">
-  <img src="./Figures/not.png" width="380">
+  <img src="./Figures/NOT.png" width="380">
 </div>
 
 **Truth Table**
