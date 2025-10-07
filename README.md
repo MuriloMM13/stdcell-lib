@@ -31,6 +31,7 @@ stdcell-lib/
 
 ## 🔹 NOT Gate
 
+
 <table>
 <tr>
 <td style="width:50%; vertical-align:top;">
@@ -321,7 +322,7 @@ Q <= A xor B;
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/xnor.png" width="320">
+  <img src="./Figures/XNOR.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
@@ -369,7 +370,7 @@ Q <= not (A xor B);
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/Buffer.png" width="320">
+  <img src="./Figures/BUFFER.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
@@ -415,7 +416,7 @@ Q <= A;
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/INV-TRI-STATE.png" width="320">
+  <img src="./Figures/TRI_STATE_INVERTER.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
@@ -462,7 +463,7 @@ Q <= not A when EN = '1' else 'Z';
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/buf-tri-state.png" width="320">
+  <img src="./Figures/BUFFER_TRI_STATE.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
@@ -509,7 +510,7 @@ Q <= A when EN = '1' else 'Z';
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/transmission.png" width="320">
+  <img src="./Figures/TG.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
@@ -602,7 +603,7 @@ Q <= (A and not S) or (B and S);
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/LATCH.png" width="320">
+  <img src="./Figures/LATCH_D.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
@@ -654,7 +655,7 @@ end process;
 <tr>
 <td style="width:50%; vertical-align:top;">
 <div style="background-color:#ffffff; padding:8px; text-align:center;">
-  <img src="./Figures/ff .png" width="320">
+  <img src="./Figures/FF_D.png" width="320">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
