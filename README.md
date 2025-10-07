@@ -34,8 +34,8 @@ stdcell-lib/
 <table>
 <tr>
 <td style="width:50%; vertical-align:top;">
-<div style="background-color:#ffffff; padding:12px; text-align:center; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <img src="./Figures/NOT.png" width="340">
+<div style="padding:12px; text-align:center;">
+  <img src="./Figures/NOT.png" alt="NOT gate — symbol & schematic" style="max-width:100%; height:auto;" width="340">
 </div>
 </td>
 <td style="width:50%; vertical-align:top;">
